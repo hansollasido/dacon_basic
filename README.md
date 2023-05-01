@@ -33,6 +33,30 @@ train['Scaled_promotion'] = scaled
 ```
 
 - 신경망 구조 또는  설계
+
+```python
+import time
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV
+start = time.time() # 시작 시간 저장
+
+# 랜덤 포레스트의 parameter 범위를 정의한다.
+RF_params = {
+    'n_estimators' : [50,100,150,200,300,500,1000],
+    'max_features' : ['auto','sqrt'],
+    'max_depth' : [8,10,12,14,16],
+    'min_samples_leaf' : [1,2,4,8],
+    'min_samples_split' : [2,3,5,10]}
+
+# GridSearchCV를 이용하여 dict에Randomforest 모델을 저장한다. 
+RF_models = {
+    'RF': GridSearchCV(
+    RandomForestClassifier(random_state=42), param_grid=RF_params, n_jobs=-1
+    ).fit(train_input, train_target).best_estimator_}
+
+print(f'걸린시간 : {np.round(time.time()-start, 3)}초') # 현재시간 - 시작시간(단위 초)
+```
+
 - 학습
 - 예측
 - 결과 제출
