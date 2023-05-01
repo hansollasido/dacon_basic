@@ -4,4 +4,4 @@
 
 - [펭귄 몸무게 예측 경진대회](https://dacon.io/competitions/official/235862/overview/description)
 - [여행 상품 신청 여부 예측 경진대회](https://dacon.io/competitions/official/235959/overview/description)
-- 
+- 쇼핑몰 지점별 매출액 예측 경진대회
