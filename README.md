@@ -14,6 +14,9 @@ Dacon Basic 대회를 통해 인공지능을 실습하고 공부해보는 기회
 
 ![image](https://user-images.githubusercontent.com/101409953/235389963-c3b4b3fb-b2ce-4184-b56d-1b04e158889f.png)
 
+![image](https://user-images.githubusercontent.com/101409953/235390172-43f8ec2a-efd2-4b9b-866f-a41dfa98a352.png)
+
+
 - 데이터 처리
 
 ```python
@@ -29,7 +32,7 @@ scaled = scaler.transform(train[['add_promotion']])
 train['Scaled_promotion'] = scaled
 ```
 
-- 신경망 구조 설계
+- 신경망 구조 또는  설계
 - 학습
 - 예측
 - 결과 제출
